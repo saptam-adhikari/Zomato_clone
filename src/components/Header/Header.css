@@ -1,0 +1,84 @@
+
+
+.header{
+    width:100%;
+    background: url(https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 65vh;
+}
+
+.nav-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+    
+}
+.nav-section>span{
+    color: azure;
+    font-size: 1rem;
+    margin-left: 240px;
+    cursor: pointer;   
+}
+.right{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-right: 200px;
+    padding: 20px;
+    cursor: pointer;
+}
+.right>span{
+    color: azure;
+    font-size: 1.1rem;     
+}
+
+.header-content{
+    position: absolute;
+    width: 100%;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.header-content>img{
+    max-width: 330px;
+}
+.header-content>h3{
+    color: azure;
+    font-size: 2rem;
+    font-weight: normal;
+    letter-spacing: .3rem;
+    padding: 15px;
+}
+
+.input{
+    min-width: 50%;
+    height: 55px;
+    border: none;
+    display:flex;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    align-items: center;
+}
+.input>select{
+    flex: 1;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-size: 1rem;
+    font-weight: normal;
+    color: gray;
+    padding: 8px;
+}
+.input>input{
+    flex: 2;
+    padding: 8px;
+    border: none;
+    outline: none;
+}

@@ -1,0 +1,76 @@
+.collection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 200px;
+    gap: 30px;
+}
+
+.collection>h1{
+    text-align: start;
+    font-size: 2rem;
+    color: #333;
+}
+.collectionText{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.collectionText>p{
+    font-size: 1rem;
+    font-weight: normal;
+    color: #333;
+}
+.collectionText>span{
+    display: flex;
+    align-items: center;
+    color: coral;
+    cursor: pointer;
+}
+.collectionCard{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+.collectionImg{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.collectionImg::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+}
+.collectionImg>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.collectionImg>h3{
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    color: rgb(244, 247, 247);
+    z-index: 99;
+}
+.collectionImg>span{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    z-index: 99;
+}
