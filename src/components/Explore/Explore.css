@@ -1,0 +1,11 @@
+.explore{
+    width: 100%;
+    padding: 50px 200px;
+}
+h2{
+    text-align: start;
+    padding-top: 20px;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}

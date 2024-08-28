@@ -1,33 +1,53 @@
-import React from 'react'
-import "./Header.css"
+import React, { useState } from 'react';
+import './Header.css';
 import FmdGoodIcon from '@mui/icons-material/FmdGood';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 
 const Header = () => {
-  return (
-    <div className='header'>
-        <nav className='nav-section'>
-            <span>Get the App</span>
-            <div className='right'>
-                <span>Investor Relations</span>
-                <span>Add resturant</span>
-                <span>Log in</span>
-                <span>Sign in</span>
-            </div>
-        </nav>
+    const [open, setOpen] = useState(false);
 
-        <hero className='header-content'>
-            <img src='https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png' alt='zomato'/>
-            <h3>Discover the best food & drinks in Bhubaneswar</h3>
-            <div className='input'>
-                <select>
-                    <option><FmdGoodIcon  size={24} color="red" /> Bhubaneswar</option>
-                </select>
-                <input type='text' placeholder='Search for resturant, cuisine or a dish'/>
-            </div>
-        </hero>
-      
-    </div>
-  )
-}
+    const toggleMenu = () => {
+        setOpen(!open);
+    };
 
-export default Header
+    return (
+        <div className='header'>
+            <nav className='nav-section'>
+                <span>Get the App</span>
+                <div className='right'>
+                    <span>Investor Relations</span>
+                    <span>Add restaurant</span>
+                    <span>Log in</span>
+                    <span>Sign in</span>
+                </div>
+            </nav>
+            <div className='hamburger' onClick={toggleMenu}>
+                {open ? <CloseIcon /> : <MenuIcon />}
+            </div>
+
+            <div className={`sideMenu ${open ? 'active' : ''}`}>
+                <img src='https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png' alt='logo' />
+                <div className='innerMenu'>
+                    <span>Investor Relations</span>
+                    <span>Add restaurant</span>
+                    <span>Log in</span>
+                    <span>Sign in</span>
+                </div>
+            </div>
+
+            <div className='header-content'>
+                <img src='https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png' alt='zomato' />
+                <h3>Discover the best food & drinks in Bhubaneswar</h3>
+                <div className='input'>
+                    <select>
+                        <option><FmdGoodIcon size={24} color="red" /> Bhubaneswar</option>
+                    </select>
+                    <input type='text' placeholder='Search for restaurant, cuisine or a dish' />
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Header;

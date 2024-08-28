@@ -1,0 +1,42 @@
+.explore {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 200px;
+}
+
+.exploreContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.exploreContainer ul {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    list-style-type: none; /* Removes default list styling */
+    width: 100%; /* Optional: ensures the ul takes full width */
+    justify-content: center; /* Centers the items horizontally */
+}
+
+.exploreContainer li {
+    margin: 5px; /* Adjust margin as needed */
+    color: gray;
+    border-radius: 5px; /* Optional rounded corners */
+    white-space: nowrap; /* Prevents text from wrapping within items */
+}
+
+.exploreTitle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: normal;
+    color: black;
+}

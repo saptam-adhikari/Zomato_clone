@@ -1,0 +1,67 @@
+const questions = [
+    {
+        id: 1,
+        title: "Popular cuisins near me",
+        infos: [
+            "Bakery food near me . " ,
+            "Beverages food near me . " ,
+            "Biryani food near me . " ,
+            "Burger food near me . " ,
+            "Chinese food near me . " ,
+            "Continental food near me . " ,
+            "Desserts food near me . " ,
+            "Kebab food near me . " ,
+            "Momos food near me . " ,
+            "Mughlai food near me . " ,
+            "North Indian food near me . " ,
+            "Odia food near me . " ,
+            "Pizza food near me . " ,
+            "Rolls food near me . " ,
+            "Sandwich food near me . " ,
+            "Seafood food near me . " ,
+            "Shake food near me . " ,
+            "Sichuan food near me . " ,
+            "South Indian food near me . " ,
+            "Street food near me . " ,
+        ],
+    },
+    {
+        id: 2,
+        title: "Popular resturant types near me",
+        infos: [
+            "Bakeries near me . " ,
+            "Bars near me . " ,
+            "Beverage Shops near me . " ,
+            "Bhojanalya near me . " ,
+            "Cafés near me . " ,
+            "Casual Dining near me . " ,
+            "Clubs near me . " ,
+            "Cocktail Bars near me . " ,
+            "Dessert Parlors near me . " ,
+            "Dhabas near me . " ,
+            "Fine Dining near me . " ,
+            "Food Courts near me . " ,
+            "Food Trucks near me . " ,
+            "Kiosks near me . " ,
+            "Lounges near me . " ,
+            "Microbreweries near me . " ,
+            "Paan Shop near me . " ,
+            "Pubs near me . " ,
+            "Quick Bites near me . " ,
+            "Sweet Shops near me . " ,
+        ],
+    },
+    {
+        id: 3,
+        title: "Top Resturant Chains",
+        infos: [
+            "Burger King  ",
+            "KFC  ",
+            "Pizaa Hut  ",
+            "WOW!Momo "
+
+        ],
+    },
+];
+
+export default questions;
