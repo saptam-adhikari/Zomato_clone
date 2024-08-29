@@ -124,22 +124,13 @@
     align-items: center;
 }
 
-.input > select {
-    flex: 1;
-    border: none;
-    outline: none;
-    font-size: 1rem;
-    font-weight: normal;
-    color: gray;
-    padding: 8px;
-}
-
-.input > input {
+.input>input {
     flex: 2;
     padding: 8px;
     border: none;
     outline: none;
 }
+
 
 @media (max-width: 768px) {
     .nav-section > span {
@@ -177,7 +168,7 @@
         height: 45px;
     }
 
-    .input > select, .input > input {
+    .input > input {
         font-size: 0.9rem;
     }
 }
